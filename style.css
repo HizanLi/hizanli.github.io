@@ -140,3 +140,8 @@ footer a { color: #9ca3af; }
     .hero-content h1 { font-size: 2rem; }
     .btn-secondary { display: block; margin: 10px 0 0 0; }
 }
+
+p a, li a {
+    color: var(--primary-color);
+    text-decoration: underline; /* Optional: adds underline to make it obvious */
+}
