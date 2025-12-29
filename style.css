@@ -145,3 +145,44 @@ p a, li a {
     color: var(--primary-color);
     text-decoration: underline; /* Optional: adds underline to make it obvious */
 }
+
+/* Courses page table */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--bg-white);
+}
+.courses-table th, .courses-table td {
+    padding: 12px 15px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+}
+.courses-table thead th {
+    background: #f9fafb;
+    font-weight: 600;
+}
+.courses-table tbody tr:hover { background: #fbfdff; }
+
+/* Institution header with logo */
+.inst-heading {
+    display: flex;
+    flex-direction: column; /* stack logo on top of the degree name */
+    align-items: center; /* center logo and heading */
+    gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.inst-heading h3 { margin: 0; }
+.uni-logo {
+    height: 64px; /* slightly larger when placed above title */
+    width: auto;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+    .uni-logo { height: 40px; }
+    .inst-heading { align-items: center; text-align: center; }
+}
