@@ -176,13 +176,14 @@ p a, li a {
 }
 .inst-heading h3 { margin: 0; }
 .uni-logo {
-    height: 64px; /* slightly larger when placed above title */
-    width: auto;
+    width: 80px;
+    height: 80px; /* fixed square size for logos */
+    object-fit: contain; /* preserve aspect ratio */
     display: inline-block;
     margin-bottom: 4px;
 }
 
 @media (max-width: 600px) {
-    .uni-logo { height: 40px; }
+    .uni-logo { width: 56px; height: 56px; }
     .inst-heading { align-items: center; text-align: center; }
 }
