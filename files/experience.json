@@ -1,0 +1,142 @@
+[
+  {
+    "title_en": "Python Instructor & Technical Mentor",
+    "title_zh": "Python 教师与技术导师",
+    "company_en": "TechBlazers",
+    "company_zh": "TechBlazers",
+    "period_en": "Jan 2026 – Present",
+    "period_zh": "2026 年 1 月 – 现在",
+    "location_en": "Toronto, Canada",
+    "location_zh": "多伦多, 加拿大",
+    "bullets_en": [
+      "Engineered an introductory Python curriculum tailored for early learners (grade 5-7), translating core programming concepts, such as sequential logic, loops, and conditional branching, into highly simplified, interactive learning modules.",
+      "Lead VEX IQ coaching sessions focused on mechanical logic and iterative problem-solving, guiding students through the design and debugging of modular robotic systems.",
+      "Developed specialized coding exercises and assessments that emphasize clean code principles, helping students transition from basic syntax to building functional project portfolios."
+    ],
+    "bullets_zh": [
+      "为早期学习者（5–7 年级）设计入门级 Python 课程，将顺序逻辑、循环和条件分支等核心编程概念转化为高度简化的交互式学习模块。",
+      "负责 VEX IQ 指导课程，专注于机械逻辑与迭代式问题解决，指导学生设计和调试模块化机器人系统。",
+      "开发了专门的编码练习和评估，强调代码整洁原则，帮助学生从基础语法过渡到构建可运行的项目作品集。"
+    ]
+  },
+  {
+    "title_en": "AI Application Engineer (Intern)",
+    "title_zh": "AI 应用工程师（实习）",
+    "company_en": "SAP SE",
+    "company_zh": "SAP SE",
+    "period_en": "Apr 2025 - Sept 2025",
+    "period_zh": "2025 年 4 月 - 2025 年 9 月",
+    "location_en": "Shanghai, China",
+    "location_zh": "中国，上海",
+    "bullets_en": [
+      "Developed core features for Joule AI Assistant using Python and GPT-5. Modernized CI/CD for Joule by architecting a modular GitHub Actions pipeline with Project Piper and Kyma, and automated end-to-end deployment via ArgoCD, eliminating manual synchronization errors.",
+      "Implemented an end-to-end testing strategy for Joule and Codengine by building a dual-layer testing suite with Cucumber and Pytest. Maintained ~90% integration and ~95% unit test coverage each sprint and automated daily reporting through a Jenkins pipeline.",
+      "Engineered an LLM-powered data pipeline using Python and GPT-5 to categorize partner questions and extract qualitative trends, enabling product managers to prioritize and address top concerns across 7 SAP partners.",
+      "Built a centralized Flask-based RESTful API to orchestrate 50+ IoT devices (OrionStar robots), transitioning showroom operations from manual control to an automated system for synchronized international demonstrations."
+    ],
+    "bullets_zh": [
+      "使用 Python 与 GPT-5 开发 Joule AI 助手的核心功能。通过构建模块化的 GitHub Actions 管道（集成 Project Piper 与 Kyma）并使用 ArgoCD 自动化端到端部署，现代化了 Joule 的 CI/CD，消除了手动同步错误。",
+      "为 Joule 和 Codengine 实施端到端测试策略，构建了基于 Cucumber 与 Pytest 的双层测试套件。每个冲刺保持约 90% 的集成测试覆盖率与约 95% 的单元测试覆盖率，并通过 Jenkins 管道自动生成每日报告。",
+      "使用 Python 与 GPT-5 构建了基于 LLM 的数据管道，用于对合作伙伴问题进行分类并提取定性趋势，帮助产品经理在 7 个 SAP 合作伙伴中优先处理和解决主要问题。",
+      "构建了一个基于 Flask 的集中式 RESTful API 用于协调 50+ 台物联网设备（OrionStar 机器人），将展厅操作从手动控制转为自动化系统以进行同步的国际演示。"
+    ]
+  },
+  {
+    "title_en": "Full Stack Developer (Part-time)",
+    "title_zh": "全栈开发（兼职）",
+    "company_en": "Urban Data Research Centre",
+    "company_zh": "Urban Data Research Centre",
+    "period_en": "Sept 2024 - Apr 2025",
+    "period_zh": "2024 年 9 月 - 2025 年 4 月",
+    "location_en": "Toronto, Canada",
+    "location_zh": "多伦多, 加拿大",
+    "bullets_en": [
+      "Architected an automated Divide, Conquer, Recheck (DCR) pipeline using Python and GPT4o to extract structured numerical data from 60+ scientific publications; achieved 88% accuracy across 1,464 data points, automating a previously manual research process. (View Code)",
+      "Developed an interactive React dashboard for the University of Toronto’s City Digital Twin Project, integrating GraphDB via SPARQL to visualize stratified urban data through map-based indicators and multi-dimensional charts to facilitate complete community analysis and data-driven urban planning. (View Code)"
+    ],
+    "bullets_zh": [
+      "使用 Python 与 GPT4o 构建自动化的“划分-征服-复核（DCR）”管道，从 60+ 篇科学出版物中提取结构化数值数据；在 1,464 个数据点上达到 88% 的准确率，自动化了先前的人工研究流程。",
+      "为多伦多大学的城市数字孪生项目开发了交互式 React 仪表盘，通过 SPARQL 集成 GraphDB，可通过基于地图的指标和多维图表可视化分层的城市数据，从而促进“完整社区”分析并支持数据驱动的城市规划。"
+    ]
+  },
+  {
+    "title_en": "Machine Learning Engineer (Intern)",
+    "title_zh": "机器学习工程师（实习）",
+    "company_en": "iFLYTEK Co., Ltd.",
+    "company_zh": "科大讯飞",
+    "period_en": "Apr 2024 – Aug 2025",
+    "period_zh": "2024 年 4 月 – 2025 年 8 月",
+    "location_en": "Hefei, China",
+    "location_zh": "中国，合肥",
+    "bullets_en": [
+      "Engineered sophisticated system prompts and few-shot learning templates for the Xinghuo LLM, optimizing performance for financial Q&A, dialogue summarization, and multi-intent recognition tasks.",
+      "Conducted technical feasibility studies on state-of-the-art AI Agent frameworks (e.g., AutoGPT, ReAct); prototyped agentic workflows to evaluate their integration into existing enterprise-level production environments.",
+      "Developed an end-to-end automation framework for generating Financial Due Diligence reports, integrating web-scraping for article collection, LLM-driven content generation, and automated format validation to reduce manual reporting time."
+    ],
+    "bullets_zh": [
+      "为星火大模型（Xinghuo LLM）设计复杂的系统提示和少量示例学习模板，优化其在金融问答、对话摘要和多意图识别任务中的表现。",
+      "对最先进的 AI Agent 框架（如 AutoGPT、ReAct）进行了技术可行性研究；原型化了 agentic 工作流以评估其在企业级生产环境中的集成潜力。",
+      "开发了一个用于生成财务尽职调查报告的端到端自动化框架，集成网页抓取、LLM 驱动的内容生成和自动格式验证，以减少人工报告时间。"
+    ]
+  },
+  {
+    "title_en": "Research Assistant - Applied Machine Learning and Federated Learning",
+    "title_zh": "研究助理 - 应用机器学习与联邦学习",
+    "company_en": "University of British Columbia",
+    "company_zh": "英属哥伦比亚大学",
+    "period_en": "Sept 2023 - Apr 2024",
+    "period_zh": "2023 年 9 月 - 2024 年 4 月",
+    "location_en": "Vancouver, Canada",
+    "location_zh": "加拿大，温哥华",
+    "bullets_en": [
+      "Optimized deep learning architectures for the MedFM Medical Image Classification Challenge, achieving 80% accuracy on multi-domain medical datasets through advanced data curation and model fine-tuning.",
+      "Developed a Byzantine-robust Federated Learning aggregation strategy to mitigate poisoning attacks by implementing a dynamic weighting mechanism that identifies malicious clients via analysis of current and historical update trajectories.",
+      "Evaluated FL vulnerabilities by engineering an adversarial attack framework that simulates sophisticated poisoning (mimicking benign client behaviour), degrading global model accuracy by ~5% in experiments."
+    ],
+    "bullets_zh": [
+      "优化用于 MedFM 医学图像分类挑战的深度学习架构，通过高级数据整理与模型微调，在多域医学数据集上达到 80% 的准确率。",
+      "开发了一种拜占庭鲁棒的联邦学习聚合策略，通过分析当前与历史更新轨迹识别恶意客户端，从而减轻投毒攻击影响。",
+      "通过工程化一个对抗性攻击框架评估联邦学习脆弱性，该框架模拟复杂的投毒行为（模仿良性客户端行为），在实验中使全局模型准确率下降约 5%。"
+    ]
+  },
+  {
+    "title_en": "Software Engineer (Intern)",
+    "title_zh": "软件工程师（实习）",
+    "company_en": "S.F. EXPRESS CO. LTD",
+    "company_zh": "顺丰速运",
+    "period_en": "May 2023 – Aug 2023",
+    "period_zh": "2023 年 5 月 – 2023 年 8 月",
+    "location_en": "Shenzhen, China",
+    "location_zh": "中国，深圳",
+    "bullets_en": [
+      "Architected an automated evaluation pipeline to trigger LLM inference on large-scale datasets and programmatically benchmark outputs against ground-truth labels, streamlining the model validation lifecycle through automated performance analytics and Excel reporting.",
+      "Engineered a multi-tier dashboard (Frontend & Backend) enabling regional managers to query delivery worker compliance; implemented a hierarchical data-fetching API and complex filtering logic to manage provincial and city-level data granularity.",
+      "Architected an integrated automation suite using Selenium and Pytest to conduct end-to-end (E2E) testing across frontend and backend APIs; validated 300+ functional points and achieved 90% code coverage across unit and integration test suites to ensure system-wide stability."
+    ],
+    "bullets_zh": [
+      "设计自动化评估管道以在大规模数据集上触发 LLM 推理，并以编程方式将输出与真实标签进行基准比较，通过自动化性能分析与 Excel 报告简化模型验证流程。",
+      "构建多层仪表盘（前后端），使地区经理能够查询配送员合规情况；实现分层数据获取 API 与复杂过滤逻辑以管理省/市级的数据粒度。",
+      "架构集成自动化套件（Selenium 与 Pytest），对前后端 API 执行端到端测试；验证 300+ 个功能点并在单元与集成测试中达到 90% 的覆盖率，以确保系统稳定性。"
+    ]
+  },
+  {
+    "title_en": "Computer Science Tutor (Java)",
+    "title_zh": "计算机科学导师（Java）",
+    "company_en": "Look4Tutor",
+    "company_zh": "Look4Tutor",
+    "period_en": "Sept 2022 – Dec 2022",
+    "period_zh": "2022 年 9 月 – 2022 年 12 月",
+    "location_en": "Vancouver, Canada",
+    "location_zh": "加拿大，温哥华",
+    "bullets_en": [
+      "Mentored engineering students in core software construction principles, focusing on Object-Oriented Design (OOD), architectural patterns, and Java-based system development within a rigorous 5-credit curriculum.",
+      "Led instructional sessions on complex CS topics, including Abstract Data Types (ADTs), Design Patterns (Factory, Singleton, Strategy), and Concurrency, emphasizing thread safety and memory management.",
+      "Conducted intensive code reviews for student projects, identifying logical bottlenecks and guiding the implementation of scalable, maintainable, and testable code through industry-standard best practices."
+    ],
+    "bullets_zh": [
+      "指导工程学生掌握软件构建的核心原则，重点关注面向对象设计（OOD）、架构模式与基于 Java 的系统开发，作为严格的 5 学分课程的一部分。",
+      "主持关于抽象数据类型（ADTs）、设计模式（工厂、单例、策略）与并发性的专题教学，强调线程安全与内存管理。",
+      "对学生项目进行深入代码审查，识别逻辑瓶颈并指导实施可扩展、可维护且可测试的代码，遵循行业最佳实践。"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "name_en": "University of Toronto",
+    "name_zh": "多伦多大学",
+    "department_en": "Department of Mechanical & Industrial Engineering",
+    "department_zh": "机械与工业工程系",
+    "major_en": "Master of Engineering",
+    "major_zh": "工程硕士",
+    "gpa_en": "GPA: 3.8/4.0",
+    "gpa_zh": "绩点：3.8/4.0"
+  },
+  {
+    "name_en": "University of British Columbia",
+    "name_zh": "英属哥伦比亚大学",
+    "department_en": "Department of Electrical & Computer Engineering",
+    "department_zh": "电气与计算机工程系",
+    "major_en": "Bachelor of Applied Science in Computer Engineering",
+    "major_zh": "应用科学学士（计算机工程）",
+    "gpa_en": "GPA: 3.5/4.0",
+    "gpa_zh": "绩点：3.5/4.0"
+  }
+]

@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linxin's Resume</title>
+    <title data-i18n="title">Linxin's Resume</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* small inline style for language toggle */
+        .lang-toggle { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: inherit; padding: 6px 10px; border-radius:6px; cursor:pointer; font-size:0.95rem; }
+        .lang-toggle.active { font-weight:700; }
+    </style>
     </head>
 <body>
 
@@ -15,18 +20,23 @@
                 <ul class="nav-links">
                     <!-- <li><a href="#about">About</a></li> -->
                     <!-- <li><a href="#experience">Experience</a></li> -->
-                    <li><a href="courses.html">Courses</a></li>
+                    <!-- <li><a href="courses.html" data-i18n="nav.courses">Courses</a></li> -->
                     <!-- <li><a href="#projects">Projects</a></li> -->
-                    <li><a href="#contact" class="btn-primary">Contact</a></li>
+                    <li><a href="#contact" class="btn-primary" data-i18n="nav.contact">Contact</a></li>
                 </ul>
+                <!-- Language toggle -->
+                <div style="margin-left:12px;">
+                    <button id="lang-en" class="lang-toggle" aria-label="English">EN</button>
+                    <button id="lang-zh" class="lang-toggle" aria-label="中文">中</button>
+                </div>
             </nav>
             <div class="hero-content">
-                <h1>Hello, I'm <span class="highlight">Linxin Li</span>.</h1>
-                <p class="tagline">A Software Developer building accessible and performant AI/LLM applications.</p>
+                <h1 data-i18n="hero.title">Hello, I'm <span class="highlight">Linxin Li</span>.</h1>
+                <p class="tagline" data-i18n="hero.tagline">A Software Developer building accessible and performant AI/LLM applications.</p>
                 <div class="cta-group">
-                    <a href="LinxinLi_Resume.pdf" class="btn-primary" target="_blank">Download Resume</a>
-                    <a href="https://github.com/HizanLi?tab=repositories" class="btn-secondary" target="_blank" rel="noopener noreferrer">View My Work</a>
-                    <a href="courses.html" class="btn-secondary" >View My Course</a>
+                    <a id="resume-link" href="files/linxinLi_Resume_en.pdf" class="btn-primary" target="_blank" data-i18n="cta.resume" download="linxinLi_Resume_en.pdf">Download Resume</a>
+                    <a href="https://github.com/HizanLi?tab=repositories" class="btn-secondary" target="_blank" rel="noopener noreferrer" data-i18n="cta.work">View My Work</a>
+                    <a href="courses.html" class="btn-secondary" data-i18n="cta.course">View My Course</a>
                 </div>
             </div>
         </div>
@@ -34,36 +44,36 @@
 
     <section id="about">
         <div class="container">
-            <h2>About Me</h2>
-            <p>I am a developer driven by the challenge of making advanced technology feel intuitive. My expertise lies at the intersection of Software Development and Artificial Intelligence, where I focus on turning complex data into accessible user experiences.</p>
+            <h2 data-i18n="about.heading">About Me</h2>
+            <p data-i18n="about.p1">I am a developer driven by the challenge of making advanced technology feel intuitive. My expertise lies at the intersection of Software Development and Artificial Intelligence, where I focus on turning complex data into accessible user experiences.</p>
             <br />
-            <p>From my time building AI assistants at SAP to developing LLM-based applications at the University of Toronto, I have focused on leveraging Python, PyTorch, and JavaScript to build systems that aren't just "smart," they are helpful. I thrive on solving complex problems with LLMs and am passionate about building the next generation of intelligent, accessible software.</p>
+            <p data-i18n="about.p2">From my time building AI assistants at SAP to developing LLM-based applications at the University of Toronto, I have focused on leveraging Python, PyTorch, and JavaScript to build systems that aren't just "smart," they are helpful. I thrive on solving complex problems with LLMs and am passionate about building the next generation of intelligent, accessible software.</p>
         </div>
     </section>
 
 
     <section id="skills">
         <div class="container">
-            <h2>Technical Toolbox</h2>
+            <h2 data-i18n="skills.heading">Technical Toolbox</h2>
             <div class="skills-list">
                 <div class="skill-row">
-                    <span class="skill-label"><strong>Languages:</strong></span>
-                    <span class="skill-values">Python, Java, Golang, JavaScript (ES6+), TypeScript, C/C++, SQL (MySQL), HTML/CSS</span>
+                    <span class="skill-label" data-i18n="skills.languages"><strong>Languages:</strong></span>
+                    <span class="skill-values" data-i18n="skills.languages.values">Python, Java, Golang, JavaScript (ES6+), TypeScript, C/C++, SQL (MySQL), HTML/CSS</span>
                 </div>
                 
                 <div class="skill-row">
-                    <span class="skill-label"><strong>AI & Data:</strong></span>
-                    <span class="skill-values">PyTorch, LLMs (GPT-5/4o), MLOps, Prompt Engineering, Federated Learning, Anaconda, MongoDB</span>
+                    <span class="skill-label" data-i18n="skills.ai"><strong>AI & Data:</strong></span>
+                    <span class="skill-values" data-i18n="skills.ai.values">PyTorch, LLMs (GPT-5/4o), MLOps, Prompt Engineering, Federated Learning, Anaconda, MongoDB</span>
                 </div>
 
                 <div class="skill-row">
-                    <span class="skill-label"><strong>Cloud & DevOps:</strong></span>
-                    <span class="skill-values">AWS (Certified Solutions Architect), Kubernetes, Docker, Linux, Jenkins, GitHub Actions, ArgoCD</span>
+                    <span class="skill-label" data-i18n="skills.cloud"><strong>Cloud & DevOps:</strong></span>
+                    <span class="skill-values" data-i18n="skills.cloud.values">AWS (Certified Solutions Architect), Kubernetes, Docker, Linux, Jenkins, GitHub Actions, ArgoCD</span>
                 </div>
 
                 <div class="skill-row">
-                    <span class="skill-label"><strong>Development & QA:</strong></span>
-                    <span class="skill-values">Flask, React, RESTful APIs, Selenium, Pytest, Cucumber (BDD), Postman, DBeaver, Git, Jira</span>
+                    <span class="skill-label" data-i18n="skills.dev"><strong>Development & QA:</strong></span>
+                    <span class="skill-values" data-i18n="skills.dev.values">Flask, React, RESTful APIs, Selenium, Pytest, Cucumber (BDD), Postman, DBeaver, Git, Jira</span>
                 </div>
             </div>
         </div>
@@ -71,98 +81,21 @@
 
     <section id="experience">
         <div class="container">
-            <h2>Experience</h2>
-            
-            <div class="job-card">
-                <h3>Python Instructor & Technical Mentor</h3>
-                <span class="company">TechBlazers | Jan 2026 – Present  | Toronto, Canada</span>
-                <ul>
-                    <li>Engineered an introductory Python curriculum tailored for early learners (grade 5-7), translating core programming concepts, such as sequential logic, loops, and conditional branching, into highly simplified, interactive learning modules.</li>
-
-                    <li>Lead VEX IQ coaching sessions focused on <strong>mechanical logic</strong> and <strong>iterative problem-solving</strong>, guiding students through the design and debugging of modular robotic systems.</li>
-
-                    <li>Developed specialized coding exercises and assessments that emphasize <strong>clean code principles</strong>, helping students transition from basic syntax to building functional project portfolios.</li>
-                </ul>
+            <h2 data-i18n="experience.heading">Experience</h2>
+            <div id="experience-list">
+                <!-- Experience entries will be injected here from outlines/experience_en.json or experience_zh.json -->
             </div>
-
-            <div class="job-card">
-                <h3>AI Application Engineer (Intern)</h3>
-                <span class="company">SAP SE | Apr 2025 - Sept 2025 | Shanghai, China</span>
-                <ul>
-                    <li>Developed core features for Joule AI Assistant using <strong>Python</strong> and <strong>GPT-5</strong>. Modernized CI/CD for Joule by architecting a modular <strong>GitHub Actions</strong> pipeline with <strong>Project Piper</strong> and <strong>Kyma</strong>, and automated end-to-end deployment via <strong>ArgoCD</strong>, eliminating manual synchronization errors.</li>
-                    <li>Implemented an end-to-end testing strategy for Joule and Codengine by building a dual-layer testing suite with <strong>Cucumber</strong> and <strong>Pytest</strong>. Maintained ~90% integration and ~95% unit test coverage each sprint and automated daily reporting through a <strong>Jenkins</strong> pipeline.</li>
-                    <li>Engineered an LLM-powered data pipeline using <strong>Python</strong> and <strong>GPT-5</strong> to categorize partner questions and extract qualitative trends, enabling product managers to prioritize and address top concerns across 7 SAP partners.</li>
-                    <li>Built a centralized <strong>Flask-based RESTful API</strong> to orchestrate 50+ IoT devices (OrionStar robots), transitioning showroom operations from manual control to an automated system for synchronized international demonstrations.</li>
-                </ul>
-            </div>
-
-            <div class="job-card">
-                <h3>Full Stack Developer (Part-time)</h3>
-                <span class="company">Urban Data Research Centre | Sept 2024 - Apr 2025 | Toronto, Canada</span>
-                <ul>
-                    <li>Architected an automated <strong>Divide, Conquer, Recheck (DCR)</strong> pipeline using <strong>Python</strong> and <strong>GPT4o</strong> to extract structured numerical data from 60+ scientific publications; achieved <strong>88% accuracy</strong> across 1,464 data points, automating a previously manual research process. (<a href="https://github.com/HizanLi/llm_meta_analysis" target="_blank">View Code</a>)</li>
-                    <li>Developed an interactive React dashboard for the University of Toronto’s City Digital Twin Project, integrating GraphDB via SPARQL to visualize stratified urban data through map-based indicators and multi-dimensional charts to facilitate "complete community" analysis and data-driven urban planning.(<a href="https://github.com/csse-uoft/city-digital-twin" target="_blank">View Code</a>)</li>
-                </ul>
-            </div>
-
-            <div class="job-card">
-                <h3>Machine Learning Engineer (Intern)</h3>
-                <span class="company">iFLYTEK Co., Ltd. | Apr 2024 – Aug 2025 | Hefei, China</span>
-                <ul>
-                    <li>Engineered sophisticated system prompts and few-shot learning templates for the <strong>Xinghuo LLM</strong>, optimizing performance for financial Q&A, dialogue summarization, and multi-intent recognition tasks.</li>
-
-                    <li>Conducted technical feasibility studies on state-of-the-art <strong>AI Agent frameworks</strong> (e.g., AutoGPT, ReAct); prototyped agentic workflows to evaluate their integration into existing enterprise-level production environments.</li>
-
-                    <li>Developed an end-to-end automation framework for generating <strong>Financial Due Diligence</strong> reports, integrating web-scraping for article collection, LLM-driven content generation, and automated format validation to reduce manual reporting time.</li>
-                </ul>
-            </div>
-
-            <div class="job-card">
-                <h3>Research Assistant - Applied Machine Learning and Federated Learning</h3>
-                <span class="company">University of British Columbia | Sept 2023 - Apr 2024 | Vancouver, Canada</span>
-                <ul>
-                    <li>Optimized deep learning architectures for the MedFM Medical Image Classification Challenge, achieving <strong>80%</strong> accuracy on multi-domain medical datasets through advanced data curation and model fine-tuning.</li>
-                    <li>Developed a Byzantine-robust Federated Learning aggregation strategy to mitigate poisoning attacks by implementing a dynamic weighting mechanism that identifies malicious clients via analysis of current and historical update trajectories.</li>
-                    <li>Evaluated FL vulnerabilities by engineering an adversarial attack framework that simulates sophisticated poisoning (mimicking benign client behaviour), degrading global model accuracy by ~5% in experiments.</li>
-                </ul>
-            </div>
-
-            <div class="job-card">
-                <h3>Software Engineer (Intern)</h3>
-                <span class="company">S.F. EXPRESS CO. LTD | May 2023 – Aug 2023 | Shenzhen, China</span>
-                <ul>
-                    <li>Architected an automated evaluation pipeline to trigger LLM inference on large-scale datasets and programmatically benchmark outputs against ground-truth labels, streamlining the model validation lifecycle through automated performance analytics and Excel reporting.</li>
-
-                    <li>Engineered a multi-tier dashboard (Frontend & Backend) enabling regional managers to query delivery worker compliance; implemented a hierarchical data-fetching API and complex filtering logic to manage provincial and city-level data granularity.</li>
-
-                    <li>Architected an integrated automation suite using <strong>Selenium</strong> and <strong>Pytest</strong> to conduct end-to-end (E2E) testing across frontend and backend APIs; validated 300+ functional points and achieved <strong>90% code coverage</strong> across unit and integration test suites to ensure system-wide stability.</li>
-
-                </ul>
-            </div>
-
-            <div class="job-card">
-                <h3>Computer Science Tutor (Java)</h3>
-                <span class="company">Look4Tutor | Sept 2022 – Dec 2022 | Vancouver, Canada</span>
-                <ul>
-                    <li>Mentored engineering students in core software construction principles, focusing on <strong>Object-Oriented Design (OOD)</strong>, architectural patterns, and Java-based system development within a rigorous 5-credit curriculum.</li>
-
-                    <li>Led instructional sessions on complex CS topics, including <strong>Abstract Data Types (ADTs)</strong>, <strong>Design Patterns</strong> (Factory, Singleton, Strategy), and <strong>Concurrency</strong>, emphasizing thread safety and memory management.</li>
-
-                    <li> Conducted intensive code reviews for student projects, identifying logical bottlenecks and guiding the implementation of scalable, maintainable, and testable code through industry-standard best practices.</li>
-                </ul>
-            </div>
-
         </div>
     </section>
 
     <section id="certificates">
         <div class="container">
-            <h2>Certificates</h2>
+            <h2 data-i18n="certs.heading">Certificates</h2>
             <div class="cert-card">
                 <h3>AWS Certified Solutions Architect &ndash; Associate</h3>
                 <p>Issued by Amazon Web Services.</p>
                 <p>
-                    <a href="certificate/AWS_Certified_Solutions_Architect_Associate.pdf" target="_blank" download>
+                    <a href="certificate/aws/AWS_Certified_Solutions_Architect_Associate.pdf" target="_blank" download>
                         Download certificate (PDF)
                     </a>
                 </p>
@@ -173,29 +106,213 @@
 
     <section id="education">
         <div class="container">
-            <h2>Education</h2>
-            <div class="edu-item">
-                <h3>University of Toronto</h3>
-                <p>Relevant Coursework: Distributed Systems, Compilers, Algorithm Design</p>
-            </div>
-            <div class="edu-item">
-                <h3>University of British Columbia</h3>
-                <p>Focus: Applied Machine Learning & Federated Learning</p>
+            <h2 data-i18n="education.heading">Education</h2>
+            <div id="education-list">
+                <!-- Education entries will be injected here from outlines/education.json -->
             </div>
         </div>
     </section>
 
     <footer id="contact">
         <div class="container">
-            <h2>Let's Connect</h2>
-            <p>Open to new opportunities.</p>
+            <h2 data-i18n="contact.heading">Let's Connect</h2>
+            <p data-i18n="contact.p">Open to new opportunities.</p>
             <p><a href="mailto:email@example.com">linxin.li@mail.utoronto.ca</a></p>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/linxin-li-53571a269/">LinkedIn</a> | <a href="https://github.com/HizanLi">GitHub</a>
             </div>
-            <p class="copyright">&copy; 2026 Linxin Li. Built with HTML & CSS.</p>
+            <p class="copyright" data-i18n="footer.copy">&copy; 2026 Linxin Li. Built with HTML & CSS.</p>
         </div>
     </footer>
 
+    <script>
+        (function(){
+            // Minimal i18n support: translations map and DOM replacement by data-i18n keys
+            const i18n = {
+                en: {
+                    "title": "Linxin's Resume",
+                    "nav.courses": "Courses Taken",
+                    "nav.contact": "Contact",
+                    "hero.title": "Hello, I'm <span class=\"highlight\">Linxin Li</span>.",
+                    "hero.tagline": "A software developer building accessible and performant AI/LLM applications.",
+                    "cta.resume": "Download Resume",
+                    "cta.work": "View My Work",
+                    "cta.course": "View Completed Coursework",
+                    "about.heading": "About Me",
+                    "about.p1": "I am a developer driven by the challenge of making advanced technology feel intuitive. My expertise lies at the intersection of Software Development and Artificial Intelligence, where I focus on turning complex data into accessible user experiences.",
+                    "about.p2": "From my time building AI assistants at SAP to developing LLM-based applications at the University of Toronto, I have focused on leveraging Python, PyTorch, and JavaScript to build systems that aren't just \"smart,\" they are helpful. I thrive on solving complex problems with LLMs and am passionate about building the next generation of intelligent, accessible software.",
+                    "skills.heading": "Technical Toolbox",
+                    "skills.languages": "Languages:",
+                    "skills.languages.values": "Python, Java, Golang, JavaScript (ES6+), TypeScript, C/C++, SQL (MySQL), HTML/CSS",
+                    "skills.ai": "AI & Data:",
+                    "skills.ai.values": "PyTorch, LLMs (GPT-5/4o), MLOps, Prompt Engineering, Federated Learning, Anaconda, MongoDB",
+                    "skills.cloud": "Cloud & DevOps:",
+                    "skills.cloud.values": "AWS (Certified Solutions Architect), Kubernetes, Docker, Linux, Jenkins, GitHub Actions, ArgoCD",
+                    "skills.dev": "Development & QA:",
+                    "skills.dev.values": "Flask, React, RESTful APIs, Selenium, Pytest, Cucumber (BDD), Postman, DBeaver, Git, Jira",
+                    "experience.heading": "Experience",
+                    "certs.heading": "Certificates",
+                    "education.heading": "Education",
+                    "contact.heading": "Let's Connect",
+                    "contact.p": "Open to new opportunities.",
+                    "footer.copy": "© 2026 Linxin Li. Built with HTML & CSS."
+                },
+                zh: {
+                    "title": "林昕 | 软件工程师作品集",
+                    "nav.courses": "核心课程",
+                    "nav.contact": "联系我",
+                    "hero.title": "你好，我是 <span class=\"highlight\">Linxin Li</span>。",
+                    "hero.tagline": "软件工程师，专注于构建高性能、易扩展且具备良好体验的 AI/LLM 应用。",
+                    "cta.resume": "下载简历",
+                    "cta.work": "项目作品",
+                    "cta.course": "查看修读课程",
+                    "about.heading": "关于我",
+                    "about.p1": "我是一名开发者，致力于将前沿技术转化为直观、高效的产品体验。我深耕于软件工程与人工智能的交叉领域，擅长将复杂的数据逻辑转化为无缝的用户交互。",
+                    "about.p2": "从在 SAP 研发 AI 助手，到在多伦多大学主导基于 LLM 的应用开发，我利用 Python、PyTorch 和 JavaScript 构建兼具智能化与实用性的系统。我热衷于利用大模型解决复杂问题，并致力于构建下一代智能软件。",
+                    "skills.heading": "技术栈",
+                    "skills.languages": "编程语言：",
+                    "skills.languages.values": "Python, Java, Golang, JavaScript (ES6+), TypeScript, C/C++, SQL, HTML/CSS",
+                    "skills.ai": "人工智能与数据：",
+                    "skills.ai.values": "PyTorch, LLMs (GPT-5/4o), MLOps, Prompt Engineering, Federated Learning, MongoDB",
+                    "skills.cloud": "云原生与运维：",
+                    "skills.cloud.values": "AWS (认证解决方案架构师), Kubernetes, Docker, Linux, Jenkins, GitHub Actions, ArgoCD",
+                    "skills.dev": "架构与工具：",
+                    "skills.dev.values": "Flask, React, RESTful APIs, Selenium, Pytest, BDD (Cucumber), Postman, Git, Jira",
+                    "experience.heading": "工作经历",
+                    "certs.heading": "专业证书",
+                    "education.heading": "教育背景",
+                    "contact.heading": "建立联系",
+                    "contact.p": "我目前对新的职业机遇持开放态度，无论是有趣的项目合作还是行业交流，都欢迎联系我。",
+                    "footer.copy": "© 2026 Linxin Li. 基于 HTML & CSS 构建."
+                }
+            };
+
+            function renderExperience(entries, lang){
+                const container = document.getElementById('experience-list');
+                if(!container) return;
+                container.innerHTML = '';
+                entries.forEach(job => {
+                    const card = document.createElement('div');
+                    card.className = 'job-card';
+
+                    const title = job[`title_${lang}`] || job.title_en || '';
+                    const company = job[`company_${lang}`] || job.company_en || '';
+                    const period = job[`period_${lang}`] || job.period_en || '';
+                    const location = job[`location_${lang}`] || job.location_en || '';
+
+                    const h3 = document.createElement('h3');
+                    h3.innerText = title;
+                    const meta = document.createElement('span');
+                    meta.className = 'company';
+                    meta.innerText = `${company} | ${period} | ${location}`;
+
+                    const ul = document.createElement('ul');
+                    const bullets = job[`bullets_${lang}`] || job.bullets_en || [];
+                    bullets.forEach(b => {
+                        const li = document.createElement('li');
+                        li.innerHTML = b; // allow HTML in bullets
+                        ul.appendChild(li);
+                    });
+
+                    card.appendChild(h3);
+                    card.appendChild(meta);
+                    card.appendChild(ul);
+                    container.appendChild(card);
+                });
+            }
+
+            async function loadExperience(lang){
+                const path = `files/experience.json`;
+                try{
+                    const res = await fetch(path);
+                    if(!res.ok) throw new Error('fetch failed');
+                    const data = await res.json();
+                    renderExperience(data, lang);
+                }catch(e){
+                    console.error('Could not load experience', e);
+                    const container = document.getElementById('experience-list');
+                    if(container) container.innerHTML = '<p>Unable to load experience.</p>';
+                }
+            }
+
+            function renderEducation(entries, lang){
+                const container = document.getElementById('education-list');
+                if(!container) return;
+                container.innerHTML = '';
+                entries.forEach(item => {
+                    const el = document.createElement('div');
+                    el.className = 'edu-item';
+                    const name = item[`name_${lang}`] || item.name_en || '';
+                    const dept = item[`department_${lang}`] || item.department_en || '';
+                    const major = item[`major_${lang}`] || item.major_en || '';
+                    const gpa = item[`gpa_${lang}`] || item.gpa_en || '';
+                    const h3 = document.createElement('h3');
+                    h3.innerText = name;
+                    const pDept = document.createElement('p');
+                    pDept.innerText = dept;
+                    const pMajor = document.createElement('p');
+                    pMajor.innerText = major;
+                    const pGpa = document.createElement('p');
+                    pGpa.innerText = gpa;
+                    el.appendChild(h3);
+                    if(dept) el.appendChild(pDept);
+                    if(major) el.appendChild(pMajor);
+                    if(gpa) el.appendChild(pGpa);
+                    container.appendChild(el);
+                });
+            }
+
+            async function loadEducation(lang){
+                const path = `files/education.json`;
+                try{
+                    const res = await fetch(path);
+                    if(!res.ok) throw new Error('fetch failed');
+                    const data = await res.json();
+                    renderEducation(data, lang);
+                }catch(e){
+                    console.error('Could not load education', e);
+                    const container = document.getElementById('education-list');
+                    if(container) container.innerHTML = '<p>Unable to load education.</p>';
+                }
+            }
+
+            function applyTranslations(lang){
+                const map = i18n[lang] || {};
+                document.documentElement.lang = (lang === 'zh') ? 'zh' : 'en';
+                document.querySelectorAll('[data-i18n]').forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    const value = map[key];
+                    if(typeof value !== 'undefined'){
+                        // use innerHTML to allow <span> in strings
+                        el.innerHTML = value;
+                    }
+                });
+                // update active button style
+                document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+                document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+                localStorage.setItem('site-lang', lang);
+                // load experience and education JSON for this language
+                const codeLang = lang === 'zh' ? 'zh' : 'en';
+                // update resume link to language-specific PDF
+                const resumeLink = document.getElementById('resume-link');
+                if(resumeLink){
+                    const fileName = `linxinLi_Resume_${codeLang}.pdf`;
+                    resumeLink.href = `files/${fileName}`;
+                    resumeLink.setAttribute('download', fileName);
+                }
+                loadExperience(codeLang);
+                loadEducation(codeLang);
+            }
+
+            // wire up buttons
+            document.addEventListener('DOMContentLoaded', function(){
+                const stored = localStorage.getItem('site-lang');
+                const prefer = stored || (navigator.language && navigator.language.startsWith('zh') ? 'zh' : 'en');
+                document.getElementById('lang-en').addEventListener('click', ()=> applyTranslations('en'));
+                document.getElementById('lang-zh').addEventListener('click', ()=> applyTranslations('zh'));
+                applyTranslations(prefer);
+            });
+        })();
+    </script>
 </body>
 </html>
