@@ -14,9 +14,9 @@
       "Developed specialized coding exercises and assessments that emphasize clean code principles, helping students transition from basic syntax to building functional project portfolios."
     ],
     "bullets_zh": [
-      "为早期学习者（5–7 年级）设计入门级 Python 课程，将顺序逻辑、循环和条件分支等核心编程概念转化为高度简化的交互式学习模块。",
-      "负责 VEX IQ 指导课程，专注于机械逻辑与迭代式问题解决，指导学生设计和调试模块化机器人系统。",
-      "开发了专门的编码练习和评估，强调代码整洁原则，帮助学生从基础语法过渡到构建可运行的项目作品集。"
+      "针对 5-7 年级青少年开发者量身定制 Python 启蒙课程，将顺序逻辑、循环及条件分支等核心编程概念转化为高交互性的模块化教学案例。",
+      "主导 VEX IQ 机器人教练工作，专注于机械逻辑与迭代式问题解决，指导学生完成模块化机器人系统的设计、搭建与复杂调试。",
+      "研发专项编程练习与评估体系，深度贯彻“洁净代码（Clean Code）”原则，助力学生实现从基础语法掌握到独立完成项目作品集的跨越。"
     ]
   },
   {
@@ -35,10 +35,10 @@
       "Built a centralized Flask-based RESTful API to orchestrate 50+ IoT devices (OrionStar robots), transitioning showroom operations from manual control to an automated system for synchronized international demonstrations."
     ],
     "bullets_zh": [
-      "使用 Python 与 GPT-5 开发 Joule AI 助手的核心功能。通过构建模块化的 GitHub Actions 管道（集成 Project Piper 与 Kyma）并使用 ArgoCD 自动化端到端部署，现代化了 Joule 的 CI/CD，消除了手动同步错误。",
-      "为 Joule 和 Codengine 实施端到端测试策略，构建了基于 Cucumber 与 Pytest 的双层测试套件。每个冲刺保持约 90% 的集成测试覆盖率与约 95% 的单元测试覆盖率，并通过 Jenkins 管道自动生成每日报告。",
-      "使用 Python 与 GPT-5 构建了基于 LLM 的数据管道，用于对合作伙伴问题进行分类并提取定性趋势，帮助产品经理在 7 个 SAP 合作伙伴中优先处理和解决主要问题。",
-      "构建了一个基于 Flask 的集中式 RESTful API 用于协调 50+ 台物联网设备（OrionStar 机器人），将展厅操作从手动控制转为自动化系统以进行同步的国际演示。"
+      "基于 Python 与 GPT-5 深度参与 Joule AI 助手核心功能研发。主导 CI/CD 流程现代化改造，通过 Project Piper 与 Kyma 构建模块化 GitHub Actions 流水线，并利用 ArgoCD 实现端到端自动化部署，彻底解决手动同步导致的生产误差。",
+      "为 Joule 与 Codengine 设计并实施双层自动化测试架构（Cucumber + Pytest），确保每个 Sprint 维持 90% 以上的集成测试覆盖率及 95% 的单元测试覆盖率，并通过 Jenkins 实现自动化每日质量报告。",
+      "利用 Python 与 GPT-5 构建智能化数据洞察流水线，实现对合作伙伴反馈的自动分类与趋势提取，赋能产品经理针对 7 家核心合作伙伴的需求进行精准优先级排布。",
+      "基于 Flask 研发集中式 RESTful API 调度系统，实现对 50 余台 OrionStar 机器人的规模化控制，驱动展厅由人工操作向自动化、同步化国际演示系统的转型。"
     ]
   },
   {
@@ -55,8 +55,8 @@
       "Developed an interactive React dashboard for the University of Toronto’s City Digital Twin Project, integrating GraphDB via SPARQL to visualize stratified urban data through map-based indicators and multi-dimensional charts to facilitate complete community analysis and data-driven urban planning. (View Code)"
     ],
     "bullets_zh": [
-      "使用 Python 与 GPT4o 构建自动化的“划分-征服-复核（DCR）”管道，从 60+ 篇科学出版物中提取结构化数值数据；在 1,464 个数据点上达到 88% 的准确率，自动化了先前的人工研究流程。",
-      "为多伦多大学的城市数字孪生项目开发了交互式 React 仪表盘，通过 SPARQL 集成 GraphDB，可通过基于地图的指标和多维图表可视化分层的城市数据，从而促进“完整社区”分析并支持数据驱动的城市规划。"
+      "自主研发 DCR（划分-征服-复核）自动化数据流水线，结合 Python 与 GPT-4o 从 60 余篇学术论文中精准提取结构化数值；在 1,464 个数据点上实现 88% 的提取精度，成功将传统人工调研流程自动化。",
+      "为多伦多大学“城市数字孪生”项目开发交互式 React 仪表盘，通过 SPARQL 深度集成 GraphDB。利用地图指标与多维图表实现城市数据的分层可视化，为“完整社区”分析与数据驱动的城市规划提供决策支持。"
     ]
   },
   {
@@ -74,9 +74,9 @@
       "Developed an end-to-end automation framework for generating Financial Due Diligence reports, integrating web-scraping for article collection, LLM-driven content generation, and automated format validation to reduce manual reporting time."
     ],
     "bullets_zh": [
-      "为星火大模型（Xinghuo LLM）设计复杂的系统提示和少量示例学习模板，优化其在金融问答、对话摘要和多意图识别任务中的表现。",
-      "对最先进的 AI Agent 框架（如 AutoGPT、ReAct）进行了技术可行性研究；原型化了 agentic 工作流以评估其在企业级生产环境中的集成潜力。",
-      "开发了一个用于生成财务尽职调查报告的端到端自动化框架，集成网页抓取、LLM 驱动的内容生成和自动格式验证，以减少人工报告时间。"
+      "针对“星火大模型”主导复杂 Prompt Engineering 与 Few-shot 学习模板设计，显著提升模型在金融问答、对话摘要及多意图识别任务中的性能表现。",
+      "对 AutoGPT、ReAct 等前沿 AI Agent 框架进行技术可行性调研，完成 Agentic Workflow（智能体工作流）的原型开发，评估其在企业级生产环境中的集成与落地潜力。",
+      "研发财务尽职调查（Due Diligence）端到端自动化框架，深度集成网页爬虫、LLM 内容生成及自动格式校验逻辑，大幅缩减人工报告撰写周期。"
     ]
   },
   {
@@ -94,9 +94,9 @@
       "Evaluated FL vulnerabilities by engineering an adversarial attack framework that simulates sophisticated poisoning (mimicking benign client behaviour), degrading global model accuracy by ~5% in experiments."
     ],
     "bullets_zh": [
-      "优化用于 MedFM 医学图像分类挑战的深度学习架构，通过高级数据整理与模型微调，在多域医学数据集上达到 80% 的准确率。",
-      "开发了一种拜占庭鲁棒的联邦学习聚合策略，通过分析当前与历史更新轨迹识别恶意客户端，从而减轻投毒攻击影响。",
-      "通过工程化一个对抗性攻击框架评估联邦学习脆弱性，该框架模拟复杂的投毒行为（模仿良性客户端行为），在实验中使全局模型准确率下降约 5%。"
+      "针对 MedFM 医疗影像分类挑战赛优化深度学习架构，通过高级数据清洗与模型微调，在多域医疗数据集上实现 80% 的分类准确率。",
+      "设计并实现一种具备“拜占庭抗性（Byzantine-robust）”的联邦学习聚合策略，通过分析节点更新的历史轨迹建立动态加权机制，有效识别并拦截恶意客户端的投毒攻击。",
+      "工程化实现一套对抗性攻击框架以评估联邦学习的脆弱性，模拟高隐蔽性的投毒行为（模仿良性行为），在实验环境下使全局模型准确率下降约 5%，为防御机制的优化提供依据。"
     ]
   },
   {
@@ -114,9 +114,9 @@
       "Architected an integrated automation suite using Selenium and Pytest to conduct end-to-end (E2E) testing across frontend and backend APIs; validated 300+ functional points and achieved 90% code coverage across unit and integration test suites to ensure system-wide stability."
     ],
     "bullets_zh": [
-      "设计自动化评估管道以在大规模数据集上触发 LLM 推理，并以编程方式将输出与真实标签进行基准比较，通过自动化性能分析与 Excel 报告简化模型验证流程。",
-      "构建多层仪表盘（前后端），使地区经理能够查询配送员合规情况；实现分层数据获取 API 与复杂过滤逻辑以管理省/市级的数据粒度。",
-      "架构集成自动化套件（Selenium 与 Pytest），对前后端 API 执行端到端测试；验证 300+ 个功能点并在单元与集成测试中达到 90% 的覆盖率，以确保系统稳定性。"
+      "设计并落地 LLM 自动化评估流水线，支持大规模数据集的并行推理及与 Ground-truth 标签的编程化比对，通过自动化性能分析与 Excel 报表产出，极大地缩短了模型验证周期。",
+      "开发多端合规监控驾驶舱（Dashboard），赋能地区管理者实时查询配送员操作合规性；设计并实现分层数据检索 API 与复杂过滤逻辑，支持省、市、区多级粒度的数据穿透查询。",
+      "基于 Selenium 与 Pytest 构建集成化自动化测试套件，执行全链路端到端（E2E）测试。覆盖 300 多个核心功能点，实现 90% 以上的单元与集成测试覆盖率，确保了系统级稳定性。"
     ]
   },
   {
@@ -134,9 +134,9 @@
       "Conducted intensive code reviews for student projects, identifying logical bottlenecks and guiding the implementation of scalable, maintainable, and testable code through industry-standard best practices."
     ],
     "bullets_zh": [
-      "指导工程学生掌握软件构建的核心原则，重点关注面向对象设计（OOD）、架构模式与基于 Java 的系统开发，作为严格的 5 学分课程的一部分。",
-      "主持关于抽象数据类型（ADTs）、设计模式（工厂、单例、策略）与并发性的专题教学，强调线程安全与内存管理。",
-      "对学生项目进行深入代码审查，识别逻辑瓶颈并指导实施可扩展、可维护且可测试的代码，遵循行业最佳实践。"
+      "深度辅导工程专业学生掌握软件构建核心原则，重点传授面向对象设计（OOD）、架构模式及基于 Java 的系统开发方案。",
+      "主持复杂 CS 课题的专题教学，涵盖抽象数据类型（ADTs）、经典设计模式（工厂、单例、策略）及多线程并发编程，强调线程安全与内存管理优化。",
+      "对学生项目进行深度代码审查（Code Review），识别逻辑瓶颈并指导实施可扩展、可维护且可测试的高质量代码，沉淀行业标准最佳实践。"
     ]
   }
 ]
