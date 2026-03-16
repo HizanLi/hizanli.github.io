@@ -94,6 +94,18 @@ section h2 {
 .job-card {
     background: var(--bg-white);
     margin-bottom: 30px;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.job-card:hover,
+.job-card:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+    outline: none;
 }
 
 .company {
@@ -104,6 +116,75 @@ section h2 {
 }
 
 .job-card ul { list-style: disc; margin-left: 20px; }
+
+.click-hint {
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Experience modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-card {
+    width: min(760px, 100%);
+    max-height: 85vh;
+    overflow-y: auto;
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    border: none;
+    background: transparent;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--text-light);
+}
+
+.modal-meta {
+    color: var(--text-light);
+    margin: 8px 0 14px 0;
+    font-style: italic;
+}
+
+.modal-detail {
+    margin: 0 0 14px 0;
+    line-height: 1.75;
+}
+
+.modal-bullets {
+    list-style: disc;
+    margin-left: 20px;
+    color: var(--text-light);
+}
+
+.modal-bullets li {
+    margin-bottom: 10px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
 
 /* 6. PROJECTS GRID */
 .project-grid {

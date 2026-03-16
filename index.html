@@ -88,6 +88,16 @@
         </div>
     </section>
 
+    <div id="experience-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-meta" class="modal-meta"></p>
+            <p id="modal-detail" class="modal-detail"></p>
+            <ul id="modal-bullets" class="modal-bullets"></ul>
+        </div>
+    </div>
+
     <section id="certificates">
         <div class="container">
             <h2 data-i18n="certs.heading">Certificates</h2>
@@ -151,11 +161,13 @@
                     "skills.dev": "Development & QA:",
                     "skills.dev.values": "Flask, React, RESTful APIs, Selenium, Pytest, Cucumber (BDD), Postman, DBeaver, Git, Jira",
                     "experience.heading": "Experience",
+                    "experience.clickHint": "Click to view details",
                     "certs.heading": "Certificates",
                     "education.heading": "Education",
                     "contact.heading": "Let's Connect",
                     "contact.p": "Open to new opportunities.",
-                    "footer.copy": "© 2026 Linxin Li. Built with HTML & CSS."
+                    "footer.copy": "© 2026 Linxin Li. Built with HTML & CSS.",
+                    "modal.close": "Close"
                 },
                 zh: {
                     "title": "林昕 | 软件工程师作品集",
@@ -179,13 +191,55 @@
                     "skills.dev": "架构与工具：",
                     "skills.dev.values": "Flask, React, RESTful APIs, Selenium, Pytest, BDD (Cucumber), Postman, Git, Jira",
                     "experience.heading": "工作经历",
+                    "experience.clickHint": "点击查看详情",
                     "certs.heading": "专业证书",
                     "education.heading": "教育背景",
                     "contact.heading": "建立联系",
                     "contact.p": "我目前对新的职业机遇持开放态度，无论是有趣的项目合作还是行业交流，都欢迎联系我。",
-                    "footer.copy": "© 2026 Linxin Li. 基于 HTML & CSS 构建."
+                    "footer.copy": "© 2026 Linxin Li. 基于 HTML & CSS 构建.",
+                    "modal.close": "关闭"
                 }
             };
+
+            function openExperienceModal(job, lang){
+                const modal = document.getElementById('experience-modal');
+                const titleEl = document.getElementById('modal-title');
+                const metaEl = document.getElementById('modal-meta');
+                const detailEl = document.getElementById('modal-detail');
+                const bulletsEl = document.getElementById('modal-bullets');
+                const closeBtn = document.getElementById('modal-close');
+                if(!modal || !titleEl || !metaEl || !detailEl || !bulletsEl || !closeBtn) return;
+
+                const title = job[`title_${lang}`] || job.title_en || '';
+                const company = job[`company_${lang}`] || job.company_en || '';
+                const period = job[`period_${lang}`] || job.period_en || '';
+                const location = job[`location_${lang}`] || job.location_en || '';
+                const detail = job[`details_${lang}`] || job.details_en || '';
+                const bullets = job[`bullets_${lang}`] || job.bullets_en || [];
+
+                titleEl.innerText = title;
+                metaEl.innerText = `${company} | ${period} | ${location}`;
+                detailEl.innerText = detail;
+                bulletsEl.innerHTML = '';
+                bullets.forEach(b => {
+                    const li = document.createElement('li');
+                    li.innerHTML = b;
+                    bulletsEl.appendChild(li);
+                });
+
+                closeBtn.setAttribute('aria-label', (i18n[lang] && i18n[lang]['modal.close']) || 'Close');
+                modal.classList.add('show');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.classList.add('modal-open');
+            }
+
+            function closeExperienceModal(){
+                const modal = document.getElementById('experience-modal');
+                if(!modal) return;
+                modal.classList.remove('show');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.classList.remove('modal-open');
+            }
 
             function renderExperience(entries, lang){
                 const container = document.getElementById('experience-list');
@@ -214,9 +268,25 @@
                         ul.appendChild(li);
                     });
 
+                    const hint = document.createElement('p');
+                    hint.className = 'click-hint';
+                    hint.innerText = (i18n[lang] && i18n[lang]['experience.clickHint']) || 'Click to view details';
+
+                    card.tabIndex = 0;
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('aria-label', `${title}. ${hint.innerText}`);
+                    card.addEventListener('click', () => openExperienceModal(job, lang));
+                    card.addEventListener('keydown', (e) => {
+                        if(e.key === 'Enter' || e.key === ' '){
+                            e.preventDefault();
+                            openExperienceModal(job, lang);
+                        }
+                    });
+
                     card.appendChild(h3);
                     card.appendChild(meta);
                     card.appendChild(ul);
+                    card.appendChild(hint);
                     container.appendChild(card);
                 });
             }
@@ -310,6 +380,19 @@
                 const prefer = stored || (navigator.language && navigator.language.startsWith('zh') ? 'zh' : 'en');
                 document.getElementById('lang-en').addEventListener('click', ()=> applyTranslations('en'));
                 document.getElementById('lang-zh').addEventListener('click', ()=> applyTranslations('zh'));
+
+                const modal = document.getElementById('experience-modal');
+                const closeBtn = document.getElementById('modal-close');
+                if(closeBtn) closeBtn.addEventListener('click', closeExperienceModal);
+                if(modal){
+                    modal.addEventListener('click', (e) => {
+                        if(e.target === modal) closeExperienceModal();
+                    });
+                }
+                document.addEventListener('keydown', (e) => {
+                    if(e.key === 'Escape') closeExperienceModal();
+                });
+
                 applyTranslations(prefer);
             });
         })();

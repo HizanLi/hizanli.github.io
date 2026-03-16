@@ -8,6 +8,8 @@
     "period_zh": "2026 年 1 月 – 现在",
     "location_en": "Toronto, Canada",
     "location_zh": "多伦多, 加拿大",
+    "details_en": "Lead the end-to-end design and delivery of Python and VEX IQ robotics programs for youth, integrating computational thinking with industry-standard clean coding practices to drive project-based learning (PBL) and competition-ready technical skills.",
+    "details_zh": "主导面向青少年的 Python 与 VEX IQ 机器人课程研发与教学交付；深度融合计算思维与行业级洁净代码规范（如 PEP 8），通过项目制学习（PBL）培养学生解决复杂工程问题的能力与竞赛竞技水平。",
     "bullets_en": [
       "Engineered an introductory Python curriculum tailored for early learners (grade 5-7), translating core programming concepts, such as sequential logic, loops, and conditional branching, into highly simplified, interactive learning modules.",
       "Lead VEX IQ coaching sessions focused on mechanical logic and iterative problem-solving, guiding students through the design and debugging of modular robotic systems.",
@@ -28,6 +30,8 @@
     "period_zh": "2025 年 4 月 - 2025 年 9 月",
     "location_en": "Shanghai, China",
     "location_zh": "中国，上海",
+    "details_en": "Spearheaded the engineering of enterprise-grade AI capabilities for the Joule assistant, optimizing the full LLM lifecycle from feature engineering to automated deployment, while ensuring high scalability and system reliability through robust CI/CD and API orchestration.",
+    "details_zh": "主导 Joule AI 助手企业级能力的工程化落地，通过构建覆盖 LLM 特征工程、自动化部署及分布式 API 编排的全生命周期流程，显著提升了复杂企业级应用在生产环境中的可扩展性与系统健壮性。",
     "bullets_en": [
       "Developed core features for Joule AI Assistant using Python and GPT-5. Modernized CI/CD for Joule by architecting a modular GitHub Actions pipeline with Project Piper and Kyma, and automated end-to-end deployment via ArgoCD, eliminating manual synchronization errors.",
       "Implemented an end-to-end testing strategy for Joule and Codengine by building a dual-layer testing suite with Cucumber and Pytest. Maintained ~90% integration and ~95% unit test coverage each sprint and automated daily reporting through a Jenkins pipeline.",
@@ -50,6 +54,8 @@
     "period_zh": "2024 年 9 月 - 2025 年 4 月",
     "location_en": "Toronto, Canada",
     "location_zh": "多伦多, 加拿大",
+    "details_en": "Developed data and visualization systems for urban research, including an LLM-powered extraction pipeline and a React dashboard to support evidence-based planning and community analysis.",
+    "details_zh": "为城市研究构建数据与可视化系统，包括基于 LLM 的自动抽取流水线与 React 仪表盘，支撑数据驱动的规划与社区分析。",
     "bullets_en": [
       "Architected an automated Divide, Conquer, Recheck (DCR) pipeline using Python and GPT4o to extract structured numerical data from 60+ scientific publications; achieved 88% accuracy across 1,464 data points, automating a previously manual research process. (View Code)",
       "Developed an interactive React dashboard for the University of Toronto’s City Digital Twin Project, integrating GraphDB via SPARQL to visualize stratified urban data through map-based indicators and multi-dimensional charts to facilitate complete community analysis and data-driven urban planning. (View Code)"
@@ -68,6 +74,8 @@
     "period_zh": "2024 年 4 月 – 2025 年 8 月",
     "location_en": "Hefei, China",
     "location_zh": "中国，合肥",
+    "details_en": "Focused on applied LLM engineering for finance workflows, from prompt optimization and agent framework evaluation to automated due-diligence report generation.",
+    "details_zh": "聚焦金融场景下的大模型工程实践，覆盖提示词优化、智能体框架评估与尽职调查报告自动化生成。",
     "bullets_en": [
       "Engineered sophisticated system prompts and few-shot learning templates for the Xinghuo LLM, optimizing performance for financial Q&A, dialogue summarization, and multi-intent recognition tasks.",
       "Conducted technical feasibility studies on state-of-the-art AI Agent frameworks (e.g., AutoGPT, ReAct); prototyped agentic workflows to evaluate their integration into existing enterprise-level production environments.",
@@ -88,12 +96,16 @@
     "period_zh": "2023 年 9 月 - 2024 年 4 月",
     "location_en": "Vancouver, Canada",
     "location_zh": "加拿大，温哥华",
+    "details_en": "Conducted research on medical imaging and federated learning security, improving model performance while designing robust defenses against poisoning attacks.",
+    "details_zh": "开展医疗影像与联邦学习安全研究，在提升模型效果的同时设计并验证对抗投毒攻击的鲁棒防御策略。",
     "bullets_en": [
+      "Supervised by <a href='https://ece.ubc.ca/xiaoxiao-li/'>Xiaoxiao Li</a> and <a href='https://ece.ubc.ca/simon-oya/'>Simon Oya</a> on different projects",
       "Optimized deep learning architectures for the MedFM Medical Image Classification Challenge, achieving 80% accuracy on multi-domain medical datasets through advanced data curation and model fine-tuning.",
       "Developed a Byzantine-robust Federated Learning aggregation strategy to mitigate poisoning attacks by implementing a dynamic weighting mechanism that identifies malicious clients via analysis of current and historical update trajectories.",
       "Evaluated FL vulnerabilities by engineering an adversarial attack framework that simulates sophisticated poisoning (mimicking benign client behaviour), degrading global model accuracy by ~5% in experiments."
     ],
     "bullets_zh": [
+      "在不同项目中，分别受 <a href='https://ece.ubc.ca/xiaoxiao-li/'>Xiaoxiao Li</a> 和 <a href='https://ece.ubc.ca/simon-oya/'>Simon Oya</a> 指导",
       "针对 MedFM 医疗影像分类挑战赛优化深度学习架构，通过高级数据清洗与模型微调，在多域医疗数据集上实现 80% 的分类准确率。",
       "设计并实现一种具备“拜占庭抗性（Byzantine-robust）”的联邦学习聚合策略，通过分析节点更新的历史轨迹建立动态加权机制，有效识别并拦截恶意客户端的投毒攻击。",
       "工程化实现一套对抗性攻击框架以评估联邦学习的脆弱性，模拟高隐蔽性的投毒行为（模仿良性行为），在实验环境下使全局模型准确率下降约 5%，为防御机制的优化提供依据。"
@@ -108,6 +120,8 @@
     "period_zh": "2023 年 5 月 – 2023 年 8 月",
     "location_en": "Shenzhen, China",
     "location_zh": "中国，深圳",
+    "details_en": "Built automation platforms across LLM evaluation, compliance analytics dashboards, and full-stack testing to improve operational visibility and software reliability.",
+    "details_zh": "构建覆盖 LLM 评测、合规分析驾驶舱与全栈自动化测试的平台能力，提升业务可视化与软件可靠性。",
     "bullets_en": [
       "Architected an automated evaluation pipeline to trigger LLM inference on large-scale datasets and programmatically benchmark outputs against ground-truth labels, streamlining the model validation lifecycle through automated performance analytics and Excel reporting.",
       "Engineered a multi-tier dashboard (Frontend & Backend) enabling regional managers to query delivery worker compliance; implemented a hierarchical data-fetching API and complex filtering logic to manage provincial and city-level data granularity.",
@@ -128,6 +142,8 @@
     "period_zh": "2022 年 9 月 – 2022 年 12 月",
     "location_en": "Vancouver, Canada",
     "location_zh": "加拿大，温哥华",
+    "details_en": "Tutored computer science students in Java software construction, emphasizing object-oriented design, patterns, concurrency, and maintainable engineering practices.",
+    "details_zh": "辅导计算机科学学生进行 Java 软件构建，重点覆盖面向对象设计、设计模式、并发编程与可维护工程实践。",
     "bullets_en": [
       "Mentored engineering students in core software construction principles, focusing on Object-Oriented Design (OOD), architectural patterns, and Java-based system development within a rigorous 5-credit curriculum.",
       "Led instructional sessions on complex CS topics, including Abstract Data Types (ADTs), Design Patterns (Factory, Singleton, Strategy), and Concurrency, emphasizing thread safety and memory management.",

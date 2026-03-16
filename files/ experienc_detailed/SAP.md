@@ -1,0 +1,47 @@
+SAP:
+Joule AI Core Features Implementation:
+    Function: SEARCH_PROMOTION_PLAN
+        The SEARCH_PROMOTION_PLAN function is a high-level intent-parsing tool designed to bridge the gap between natural language user queries and structured promotional data stored in a relational database. This feature utilizes an LLM-driven preprocessing stage to interpret unstructured text, such as "What deals do we have for beverages in July?", and extracts two primary dimensions: Product/Category Identity and Temporal Constraints. By mapping these variables to a structured schema, the assistant can precisely navigate the database to locate active or scheduled promotion plans.
+
+        Once the LLM identifies the specific product (or category) and the target timeframe (month and day), the system initiates a backend function call to the SQL database. This query logic is designed to filter for records that contain a specific Product UUID or a matching Product Category, while simultaneously validating that the promotion’s duration overlaps with the requested time range. The result is a curated set of promotion objects that satisfy both the thematic and temporal requirements of the original user prompt, ensuring that the information returned is both relevant and timely.
+
+    Function: CREATE_PROMOTION_PLAN
+        The CREATE_PROMOTION_PLAN function is an intelligent orchestration workflow designed to automate the generation of promotional entries within the system. The process initiates with an LLM-driven analysis of unstructured user input to identify and extract three core entities: the Promotion Name, the Product or Category targeted, and the Time Period. Once these parameters are defined, the system performs a targeted SQL query to retrieve the relevant product metadata, which is then mapped into a standardized JSON schema to ensure data integrity before the promotion is finalized.
+
+        To maintain system requirements, a specific time duration is mandatory for every promotion. If the user’s initial request lacks explicit dates, the function triggers a recursive lookup logic: it scans the database for historical promotion records with high semantic similarity in both naming conventions and product scope. If a match is found, the system intelligently inherits the historical timeframe as the suggested period for the new plan. This dual-layered approach ensures that the creation process remains both highly automated and contextually grounded in past business cycles.
+    
+    Function: UPDATE_PROMOTION_PLAN
+        The UPDATE_PROMOTION_PLAN function provides a dynamic interface for modifying existing promotional data through high-level intent parsing. By leveraging an LLM to analyze unstructured user requests, the system can distinguish between various modification types, such as Appending, Deleting, or Changing Products, adjusting Unit Prices, modifying Discount Rates, or shifting the Sale Period. This intent-driven layer eliminates the need for manual ID entry by the user, as the assistant automatically maps natural language references to their corresponding Product UUIDs and Promotion UUIDs via targeted SQL lookups.
+
+        Once the specific records and requested changes are identified, the system validates the proposed modifications against the current promotion state. The assistant then packages these changes into a structured update request—containing the target UUIDs and the new attribute values—and submits them to the backend API for execution. This workflow ensures that complex database updates, such as swapping out a product line or extending a seasonal discount, can be performed through a single conversational turn while maintaining strict data consistency across the promotional lifecycle.
+
+    Function: ERROR_HANDLING
+        The ERROR_HANDLING function provides a multimodal diagnostic framework for resolving system exceptions and user-facing errors. When a failure occurs, Joule AI aggregates three distinct data streams to pinpoint the root cause: high-resolution screen captures of the current interface, specific error codes extracted from the webpage metadata, and contextually relevant RAG (Retrieval-Augmented Generation) results pulled from internal technical documentation. By synthesizing visual evidence with structured error logs and proprietary knowledge bases, the system can bypass generic troubleshooting and provide specific, actionable fixes.
+
+        Once these inputs are processed, the LLM generates a localized solution tailored to the user's specific environmental state. This process eliminates the need for manual document searching or repetitive "clear your cache" advice by identifying exactly where the promotion logic or system constraint failed. If the error pertains to a database conflict or a missing UUID during a promotion update, the assistant cross-references the internal documentation to explain the "why" behind the error and provides the exact steps—or a direct automated correction—to resolve the bottleneck.
+
+    "During my internship, I developed the core operational intelligence for Joule AI, focusing on the end-to-end promotion lifecycle. I didn't just build a chatbot; I built an LLM-powered middleware that translated natural language into precise, validated database actions. To do this, I implemented a suite of Function Calls that allowed GPT-5 to interact directly with our SQL backend while maintaining strict schema compliance."
+
+
+Joule AI Core Features CI/CD Implementation:
+    Intelligent Refactoring: 
+        Leveraged LLMs to perform a gap analysis and transformation of legacy monolithic configuration files. This process involved deconstructing tightly coupled scripts into a suite of reusable, high-clarity YAML modules.
+
+    Benchmarking & Standardization: 
+        Validated the refactored architecture against high-performing enterprise deployment patterns. This ensured that the new modular setup not only improved readability but also adhered to industry-best practices for microservices scalability.
+
+    "To modernize the infrastructure, I led a migration from a legacy monolithic CI/CD configuration to a modular, GitOps-driven architecture by benchmarking high-performing deployment patterns from established enterprise projects. I leveraged AI to accelerate this transition, using it to deconstruct large, tightly coupled configuration files into a suite of reusable, modular components tailored for a modern microservices environment. By integrating Project Piper into GitHub Actions, I standardized our build and security gates to meet SAP’s compliance requirements automatically, while implementing ArgoCD on Kyma to establish a pull-based deployment model. This shift effectively decoupled the application lifecycle from the deployment logic, eliminating manual synchronization errors and ensuring that the live environment was always a consistent, automated reflection of the latest stable code in Git."
+
+Joule AI Core Features Testing Implementation and Jenkins Setup:
+    Unit Layer (Pytest): 
+        I developed a comprehensive suite of unit tests using Pytest to isolate and validate the core logic of each backend tool. This included rigorous testing of the SQL generation patterns, UUID mapping algorithms, and the data-parsing logic for promotion updates. By mocking database responses and LLM outputs, I achieved 95% code coverage, ensuring that each function acted as a reliable "primitive" for the AI to invoke.
+
+    Behavioral Layer (BDD/Cucumber): 
+        To address the non-deterministic nature of AI, I implemented a Behavior-Driven Development (BDD) framework using Cucumber. I authored Gherkin feature files to simulate complex, multi-turn user interactions—such as a user ambiguously requesting a promotion update—and verified that the AI correctly navigated these scenarios. This layer validated the "handshake" between the LLM's intent parsing and the execution of backend function calls.
+
+    Continuous Integration (Jenkins): 
+        I modernized the Jenkins CI/CD infrastructure by leveraging AI to refactor enterprise-standard templates into a modular Pipeline as Code setup. This enabled a strategic dual-sync schedule, featuring an 8:00 AM "pre-flight" environment check and a 4:00 PM full regression suite, which, combined with 95% unit test coverage, transformed our deployment cycle into a high-frequency, low-risk process aligned with SAP's rigorous compliance standards.
+
+
+    "To address the gap between development velocity and quality assurance, I architected a comprehensive testing framework that integrated Behavior-Driven Development (BDD) principles using Cucumber and Pytest. By translating complex business requirements into executable scenarios, I ensured that every feature—from promotion search to error handling—was validated against its intended behavior. To sustain this "quality-first" culture, I automated a dual-sync Jenkins execution schedule: an 8:00 AM "state of the union" sweep to verify environment stability before the workday, and a 4:00 PM regression suite to validate the day’s contributions. This systematic approach, underpinned by 95% unit test coverage, transformed our deployment cycle from a high-risk manual event into a predictable, automated process with high stakeholder confidence."
+    
